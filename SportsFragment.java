@@ -76,9 +76,6 @@ public class SportsFragment extends BaseFragment implements OnClickListener, OnT
 				MainActivity.currentSportID = sportSQLManager.getNthID(position);
 				
 				if (bSettingUpSpinner) {
-					//TODO remove print
-					//System.out.println("wut WHOA " + position + " " + settingsSQLManager.getDefaultSportsSpinnerItem());
-					
 					bSettingUpSpinner = false;
 				}
 				else
@@ -88,13 +85,6 @@ public class SportsFragment extends BaseFragment implements OnClickListener, OnT
 				
 				if (((MainActivity)getActivity()).playersFragment != null)
 					((MainActivity)getActivity()).playersFragment.rebuildTable();
-				
-				//TODO remove prints
-				//System.out.println("wut HOLY " + position + "; " + settingsSQLManager.getDefaultSportsSpinnerItem());
-				//This was an important println for a while.
-				//System.out.println("wut SETTING GROUP " + MainActivity.currentSportID + " aka " + sportSQLManager.getSport(MainActivity.currentSportID));
-				//boolean bNull = ((MainActivity)getActivity()).playersFragment != null;
-				//Toast.makeText(getActivity().getApplicationContext(), "LOADING " + bNull + " " + MainActivity.currentSportID + " " + sportSQLManager.getSport(MainActivity.currentSportID), Toast.LENGTH_SHORT).show();
 			}
 			
 			@Override
@@ -271,9 +261,6 @@ public class SportsFragment extends BaseFragment implements OnClickListener, OnT
 			 */
 			
 			if (bSettingUpSpinner) {
-				//TODO remove print
-				//System.out.println("wut HELLO " + settingsSQLManager.getDefaultSportsSpinnerItem());
-				
 				//Must happen after calling setAdapter().
 				//Note that calling this is harmless if the spinner is empty, so we'll just do that.
 				sportsSpinner.setSelection(settingsSQLManager.getDefaultSportsSpinnerItem());

@@ -103,9 +103,6 @@ public class DetailsActivity extends BaseActivity implements OnClickListener {
         NUM_PAGES = THREE_PAGES;
         if (NUM_PAGES > playerCount)
         	NUM_PAGES = playerCount;
-        
-        //TODO remove: This was an important println for a while.
-        //System.out.println("wut PAGES " + playerCount + " " + NUM_PAGES);   //TODO remove
     	
 		//Get player ID data from the main activity.
 		Intent intent = getIntent();

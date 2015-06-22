@@ -1,16 +1,3 @@
-//TODO:
-//(2) that blank Player Details page...
-//(3) i think the edge of Rating will go off the edge on 2.7" screens or when the font size is Huge.
-//    to fix this, I've used layout_weight... improperly. 100 to 1 makes no sense.
-//(4) throughout the code, i use int instead of long for row IDs... that should really change.
-//(5) i don't know what's with that little gray or blue line on the right edge of the details fragments
-//    much of the time... it's a viewpager thing, been happening for a while before this version of the
-//    code. the gray line always appears on the first page of the ViewPager, for like 1/2 second when it's
-//    first created. this is likely to never be fixed.
-//(6) remove commented-out toasts and printlns throughout program.
-//(7) i should probably remove Settings in favor of SharedPreferences... maybe.
-//(8) change "players.db" to "oppnotes.db"
-
 /* Opponent Notes
  * MainActivity.java
  * Rains Jordan
@@ -37,6 +24,7 @@
  *   text_label unless I decide to set font sizes manually. (Note that whatever settings I do use, as
  *   long as they're in sp, will incorporate the device user's chosen font size.) I do use manual sizes
  *   for the Next and Previous headers.
+ *  Throughout the code, I use int instead of long for row IDs... that should really change.
  *  
  *  Remove PagerTitleStrip entirely.
  */
